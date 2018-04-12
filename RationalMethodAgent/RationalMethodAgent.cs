@@ -32,7 +32,7 @@ namespace RationalMethodAgent
     public interface IRationalMethodAgent
     {
         //methods
-        RationalMethod Execute(double area, double rain, double rcoeff, int dur);
+        RationalMethod Execute(double area, double precipint, double rcoeff, int dur);
     }
     public class RationalMethodAgent : IRationalMethodAgent
     {
@@ -41,13 +41,13 @@ namespace RationalMethodAgent
 
         #region Methods
         //retrieves Q 
-        public RationalMethod Execute(double area, double rain, double rcoeff, int dur)
+        public RationalMethod Execute(double area, double precipint, double rcoeff, int dur)
         {
             try
             {
-                RationalMethod Result = new RationalMethod(area, rain, rcoeff, dur);
+                RationalMethod Result = new RationalMethod(area, precipint, rcoeff, dur);
 
-                Result.Q = CalcQ(area, rain, rcoeff, dur);
+                Result.Q = CalcQ(area, precipint, rcoeff);
                 
                 return Result;
             }
@@ -61,9 +61,9 @@ namespace RationalMethodAgent
         #endregion
         #region HELPER METHODS
         //calculates Q as ciA
-        private double CalcQ(double area, double rain, double rcoeff, int dur)
+        private double CalcQ(double area, double precipint, double rcoeff)
         {
-            double Q = rcoeff * (rain / dur) * (area * 640); // 640 is multiplied by the area to convert sq mi to acres
+            double Q = rcoeff * precipint * (area * 640); // 640 is multiplied by the area to convert sq mi to acres
 
             return Q;
         }

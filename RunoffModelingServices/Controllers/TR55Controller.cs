@@ -51,14 +51,14 @@ namespace RunoffModelingServices.Controllers
             {
                 if (!precip.HasValue || precip < 0 || precip > 100)
                     return new BadRequestObjectResult("One or more of the parameters are invalid.");
-                }
-                catch (Exception ex)
-                {
-                    return HandleException(ex);
-                }
-                int Hlocation = pdur.IndexOf("H") - 1;
-                int dur = Convert.ToInt32(pdur.Substring(1, Hlocation));
-                return Ok(agent.Execute(precip.Value, crvnum, dur));
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+            int Hlocation = pdur.IndexOf("H") - 1;
+            int dur = Convert.ToInt32(pdur.Substring(1, Hlocation));
+            return Ok(agent.Execute(precip.Value, crvnum, dur));
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
         [HttpGet("GetResult")]

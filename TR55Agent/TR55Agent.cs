@@ -69,6 +69,10 @@ namespace TR55Agent
             double tdiff = 0;
             Dictionary<double, TR55> hydrotable = new Dictionary<double, TR55>();
 
+            int count1 = hyetograph.Count;
+
+            hyetograph = AddOne2Hyetograph(count1, hyetograph);
+
             for (int i = 0; i < hyetograph.Count; i++)
             {
                 TR55 hydrodata = new TR55(precip, crvnum, dur);
@@ -79,19 +83,19 @@ namespace TR55Agent
                 t = d * 0.01 * dur * 60;
                 tdiff = t - tempT;
                 //hydrodata.tDiff = tdiff;
-                hydrodata.DrnArea = area;
-                hydrodata.Precip = p * precip;
+                hydrodata.DRNAREA = area;
+                hydrodata.P = p * precip;
                 hydrodata.dP = (p * precip) - tempP;
-                hydrodata.PIa = hydrodata.Precip - hydrodata.Ia;
+                hydrodata.PIa = hydrodata.P - hydrodata.Ia;
                 if (hydrodata.PIa <= 0)
                 {
                     hydrodata.Pe = 0;
                     hydrodata.dPe = 0; 
-                    hydrodata.Pl = 0; 
+                    hydrodata.Pl = hydrodata.dP - hydrodata.dPe; 
                 }
                 else
                 {
-                    hydrodata.Pe = Math.Pow(hydrodata.Precip - 0.2 * hydrodata.S, 2)/(hydrodata.Precip + 0.8 * hydrodata.S);
+                    hydrodata.Pe = Math.Pow(hydrodata.P - 0.2 * hydrodata.S, 2)/(hydrodata.P + 0.8 * hydrodata.S);
                     hydrodata.dPe = hydrodata.Pe - tempPe;
                     hydrodata.Pl = hydrodata.dP - hydrodata.dPe;
                 }
@@ -102,14 +106,14 @@ namespace TR55Agent
                 }
                 else
                 {
-                    hydrodata.Q = CalcQ(hydrodata.DrnArea, hydrodata.dPe, crvnum, tdiff, hydrodata.Ia);
+                    hydrodata.Q = CalcQ(hydrodata.DRNAREA, hydrodata.dPe, crvnum, tdiff, hydrodata.Ia);
                 }
                 
 
                 hydrotable.Add(d, hydrodata);
 
                 tempT = t;
-                tempP = hydrodata.Precip;
+                tempP = hydrodata.P;
                 tempPe = hydrodata.Pe;
             }
             return hydrotable;
@@ -129,6 +133,15 @@ namespace TR55Agent
             double Q = dpe / 12 * area * Math.Pow(5280, 2) / (tdiff * 60);
 
             return Q;
+        }
+        //adds additional time step to hyetograph
+        private Dictionary<double, double> AddOne2Hyetograph(int count1, Dictionary<double, double> hyetograph)
+        {
+            double k = hyetograph.ElementAt(1).Key + hyetograph.ElementAt(count1 - 1).Key;
+            double v = hyetograph.ElementAt(count1 - 1).Value;
+
+            hyetograph.Add(k, v);
+            return hyetograph;
         }
         #endregion
     }

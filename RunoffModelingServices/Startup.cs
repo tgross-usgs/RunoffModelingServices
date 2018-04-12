@@ -9,6 +9,7 @@ using System.Linq;
 using TR55Agent;
 using RationalMethodAgent;
 using RunoffModelingServices.Resources;
+using WiM.Services.Resources;
 
 namespace RunoffModelingServices
 {
@@ -36,6 +37,7 @@ namespace RunoffModelingServices
             //add functionality to inject IOptions<T>
             services.AddOptions();
             services.Configure<TDSettings>(Configuration.GetSection("TemporalDistributions"));
+            services.Configure<APIConfigSettings>(Configuration.GetSection("APIConfigSettings"));
 
 
 

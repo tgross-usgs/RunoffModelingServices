@@ -26,7 +26,7 @@ namespace RationalMethodAgent.Resources
     {
         #region Properties
         
-        public Double RainfallI { get; set; }  // rainfall intensity (in)
+        public Double PrecipI { get; set; }  // precip intensity (inches/hour)
         public Double RunoffCoeff { get; set; } // rational runoff coefficient
         public Double DrainageArea { get; set; } // drainage area (sq/mi)
         public Double Q { get; set; } // runoff (cfs)
@@ -37,9 +37,9 @@ namespace RationalMethodAgent.Resources
         public RationalMethod()
         { }// end Site
 
-        public RationalMethod(Double rain, Double rcoeff, Double area, int dur)
+        public RationalMethod(Double area, Double precipint, Double rcoeff, int dur)
         {
-            this.RainfallI = rain / dur;
+            this.PrecipI = precipint;
             this.RunoffCoeff = rcoeff;
             this.DrainageArea = area;
             this.Duration = dur;

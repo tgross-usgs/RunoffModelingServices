@@ -25,12 +25,11 @@ namespace TR55Agent.Resources
     public class TR55
     {
         #region Properties
-        public Double DrnArea { get; set; } // drainage area (sq mi)
-        public Double Precip { get; set; }  // rainfall(in)
-        public Double CurveNum { get; set; }
+        public Double DRNAREA { get; set; } // drainage area (sq mi)
+        public Double P { get; set; }  // rainfall (in)
+        public Double RCN { get; set; }
         //public Double tDiff { get; set; }
         public int Duration { get; set; } // storm duration (6 or 24 hour)
-        public Double Q { get; set; } // runoff (cfs)
         public Double Ia { get; set; } // initial abstraction (in)
         public Double S { get; set; } // potential maximum retention after runoff begins(in)
         public Double dP { get; set; } // incremental precipitation (in)
@@ -38,6 +37,7 @@ namespace TR55Agent.Resources
         public Double Pl { get; set; } // precipitation loss (in)
         public Double Pe { get; set; } // cumulative precipitation excess (in)
         public Double dPe { get; set; } // incremental precipitation loss (in)
+        public Double Q { get; set; } // runoff (cfs)s
 
         #endregion
         #region Constructor
@@ -46,8 +46,8 @@ namespace TR55Agent.Resources
 
         public TR55(Double precip, Double curvenum, int pdur)
         {
-            this.Precip = precip;
-            this.CurveNum = curvenum;
+            this.P = precip;
+            this.RCN = curvenum;
             this.Duration = pdur;
            
             init();
@@ -57,7 +57,7 @@ namespace TR55Agent.Resources
         //initializes 
         private void init()
         {
-            S = 1000 / CurveNum - 10;
+            S = 1000 / RCN - 10;
             Ia = 0.2 * S;
         }
         #endregion

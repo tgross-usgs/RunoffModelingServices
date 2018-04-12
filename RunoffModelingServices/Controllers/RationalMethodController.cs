@@ -48,21 +48,22 @@ namespace RunoffModelingServices.Controllers
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet()]
-        public async Task<IActionResult> Get([FromQuery] double area, [FromQuery] double? rain, [FromQuery] double rcoeff, [FromQuery] string pdur)
+        public async Task<IActionResult> Get([FromQuery] double area, [FromQuery] double? precipint, [FromQuery] double rcoeff, [FromQuery] string pdur)
         {
             try
             {
-                if (!rain.HasValue || rain < 0 || rain > 100)
+                if (!precipint.HasValue || precipint < 0 || precipint > 100)
                     return new BadRequestObjectResult("One or more of the parameters are invalid.");
-                }
-                catch (Exception ex)
-                {
-                    return HandleException(ex);
-                }
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
 
-                int dur = Convert.ToInt32(pdur.Substring(1, 1));
+            int Hlocation = pdur.IndexOf("H") - 1;
+            int dur = Convert.ToInt32(pdur.Substring(1, Hlocation));
 
-            return Ok(agent.Execute(area, rain.Value, rcoeff, dur));
+            return Ok(agent.Execute(area, precipint.Value, rcoeff, dur));
         }
         #endregion
     }
