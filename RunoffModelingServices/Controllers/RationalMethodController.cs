@@ -48,7 +48,7 @@ namespace RunoffModelingServices.Controllers
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet()]
-        public async Task<IActionResult> Get([FromQuery] double area, [FromQuery] double? precipint, [FromQuery] double rcoeff, [FromQuery] string pdur)
+        public async Task<IActionResult> Get(double area, double? precipint, double rcoeff, string pdur)
         {
             try
             {

@@ -45,7 +45,7 @@ namespace RunoffModelingServices.Controllers
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet()]
-        public async Task<IActionResult> Get([FromQuery] double? precip, [FromQuery] double crvnum, [FromQuery] string pdur)
+        public async Task<IActionResult> Get(double? precip, double crvnum, string pdur)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace RunoffModelingServices.Controllers
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
         [HttpGet("GetResult")]
-        public async Task<IActionResult> GetResult([FromQuery] double area, [FromQuery] double precip, [FromQuery] double crvnum, [FromQuery] string pdur)  
+        public async Task<IActionResult> GetResult(double area, double precip, double crvnum, string pdur)  
         {
             Dictionary<double, double> hyeto = new Dictionary<double, double>();
             try
