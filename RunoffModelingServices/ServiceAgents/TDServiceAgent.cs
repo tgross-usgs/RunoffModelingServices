@@ -1,10 +1,12 @@
 ﻿using System;
+using System.IO;
 using FluentFTP;
 using RunoffModelingServices.Resources;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Text;
 using System.Linq;
+using System.Text.RegularExpressions;
 using TR55Agent.Resources;
 
 namespace RunoffModelingServices.ServiceAgents
@@ -117,11 +119,13 @@ namespace RunoffModelingServices.ServiceAgents
             string rpercent = "";
             string mytable = "";
             string r50 = "";
-            int first = result.IndexOf("All");
+            //int first = result.IndexOf("All");
+            int first = result.IndexOf("CUMULATIVE PERCENTAGES OF TOTAL PRECIPITATION FOR ALL CASES");
             int last = result.Length - first;
             List<string> plist;
-            List<string> vlist;
+            //List<string> vlist;
 
+            /* SW REGION
             //collect first line of table (percent of duration,0.0, 9.1...)
             mytable = result.Substring(first, last);
 
@@ -151,6 +155,22 @@ namespace RunoffModelingServices.ServiceAgents
                 hyetograph.Add(x, y);
             }
 
+            */ //end SW Region
+
+            //NW Region
+            //collect ALL CASES table 
+            mytable = result.Substring(first, last);
+            using (StringReader reader = new StringReader(mytable))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null) {
+                    if (Regex.IsMatch(line, @"^\d")) {
+                        plist = line.Split(',').ToList();
+                        hyetograph.Add(double.Parse(plist[0]), double.Parse(plist[5]));
+                    }
+                }
+            }
+            //end NW Region
         }
         #endregion
         #region Enumerations
