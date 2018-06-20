@@ -10,9 +10,9 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 
 > where
 
-> Q = runoff, in inches
-> P = rainfall, in inches
-> S = potential maximum retention after runoff begins, in inches, and
+> Q = runoff, in inches<br />
+> P = rainfall, in inches<br />
+> S = potential maximum retention after runoff begins, in inches, and<br />
 > Iₐ = initial abstraction, in inches
 
 >> *USDA Natural Resources Conservation Service (NRCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]*
@@ -24,9 +24,9 @@ The Rational Method is another simple technique for estimating a peak runoff fro
 
 > where
 
-> Q = design peak runoff rate, in cubic feet per second
-> C = runoff coefficient, dimensionless – defined as the ratio of the peak runoff rate to the rainfall intensity
-> i = rainfall intensity, in inches per hour, and
+> Q = design peak runoff rate, in cubic feet per second<br />
+> C = runoff coefficient, dimensionless – defined as the ratio of the peak runoff rate to the rainfall intensity<br />
+> i = rainfall intensity, in inches per hour, and<br />
 > A = drainage area, in acres 
 
 >> *Kuichling, E., 1889, The relation between the rainfall and the discharge of sewers in
