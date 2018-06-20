@@ -12,7 +12,7 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 
 > Q = runoff, in inches
 > P = rainfall, in inches
-> S = potential maximum retention after runoff begins, in inches and 
+> S = potential maximum retention after runoff begins, in inches, and
 > Iₐ = initial abstraction, in inches
 
 >> *USDA Natural Resources Conservation Service (NRCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]*
