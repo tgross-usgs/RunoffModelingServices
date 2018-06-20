@@ -18,7 +18,7 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 >> *USDA Natural Resources Conservation Service (NRCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]*
 	 
 ### Rational Method
-The Rational Method is another simple technique for estimating a peak runoff from a small watershed. It was developed by Kuichling, 1889 for small drainage basins in urban areas. Unlike the TR55 method it does not provide any information pertaining to the runoff hydrograph shape. The rational method is a valid hydrologic design tool for predicting peak flow rates from urban watersheds up to 50 acres. It is expressed by the equation:
+The Rational Method is another simple technique for estimating a peak runoff from a small watershed. It was developed by Kuichling, 1889 for small drainage basins in urban areas. Unlike the TR55 method it does not provide any information pertaining to the runoff hydrograph shape. The rational method is expressed by the equation:
 
 > Q = CiA
 
