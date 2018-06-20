@@ -6,7 +6,7 @@ The TR55 method is best applied in small watersheds that are being urbanized. Th
 
 Mass rainfall is converted to mass runoff by using a runoff curve number (RCN). RCN is based on soils, plant cover, amount of impervious areas, interception, and surface storage. Runoff is then transformed into a hydrograph by using unit hydrograph theory and routing procedures that depend on runoff travel time through segments of the watershed (USDA NRCS CED, TR-55, 1986). The Runoff Modeling Services API collects time distributions from NOAA Atlas temporal distribution data to determine runoff travel time. TR55 is expressed by the equation:
 
-> Q = ((P-Iₐ)²) / ((P-Iₐ)+S)
+> Q = (P-Iₐ)² / ((P-Iₐ)+S)
 
 > where
 
