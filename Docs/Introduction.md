@@ -15,7 +15,7 @@ Mass rainfall is converted to mass runoff by using a runoff curve number (RCN). 
 > S = potential maximum retention after runoff begins, in inches and 
 > I~a~ = initial abstraction, in inches
 
-> USDA Soil Conservation Service (SCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]
+> *USDA Soil Conservation Service (SCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]*
 	 
 ### Rational Method
 The Rational Method is best applied in small, urban watersheds. Unlike the TR55 method it does not provide any information pertaining to the runoff hydrograph shape. The rational method is a valid hydrologic design tool for predicting peak flow rates from urban watersheds up to 50 acres. It is expressed by the equation:
@@ -25,7 +25,7 @@ The Rational Method is best applied in small, urban watersheds. Unlike the TR55 
 > where
 
 > Q = design peak runoff rate, in cubic feet per second
-> C = runoff coefficient, dimensionless – defined as the ratio of the peak runoff rate to the rainfall intensity
+> C = runoff coefficient, dimensionless â€“ defined as the ratio of the peak runoff rate to the rainfall intensity
 > i = rainfall intensity, in inches per hour
 > A = drainage area, in acres 
 
