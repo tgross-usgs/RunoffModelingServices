@@ -26,7 +26,7 @@ The Rational Method is another simple technique for estimating a peak runoff fro
 
 > Q = design peak runoff rate, in cubic feet per second
 > C = runoff coefficient, dimensionless – defined as the ratio of the peak runoff rate to the rainfall intensity
-> i = rainfall intensity, in inches per hour
+> i = rainfall intensity, in inches per hour, and
 > A = drainage area, in acres 
 
 >> *Kuichling, E., 1889, The relation between the rainfall and the discharge of sewers in
