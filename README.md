@@ -1,9 +1,14 @@
-![WiM](wimlogo.png)
+![WiM](https://github.com/USGS-WiM/StreamStats/raw/staging/wimlogo.png)
 
 
 # Runoff Modeling Services
 
-StreamStats supporting wateruse REST web services.
+StreamStats supporting runoff modeling REST web services:
+
+<ul>
+    <li>TR55 - SCS Curve Number Method (NRCS 1986).</li>
+    <li>Rational Method - </li>
+</ul>
 
 ### Prerequisites
 

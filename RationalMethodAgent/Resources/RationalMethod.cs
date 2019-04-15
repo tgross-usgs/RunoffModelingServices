@@ -28,7 +28,7 @@ namespace RationalMethodAgent.Resources
         
         public Double PrecipI { get; set; }  // precip intensity (inches/hour)
         public Double RunoffCoeff { get; set; } // rational runoff coefficient
-        public Double DrainageArea { get; set; } // drainage area (sq/mi)
+        public Double DrainageArea { get; set; } // drainage area (acres)
         public Double Q { get; set; } // runoff (cfs)
         public int Duration { get; set; } // storm duration (6 or 24 hour)
 

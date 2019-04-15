@@ -63,7 +63,7 @@ namespace RationalMethodAgent
         //calculates Q as ciA
         private double CalcQ(double area, double precipint, double rcoeff)
         {
-            double Q = rcoeff * precipint * (area * 640); // 640 is multiplied by the area to convert sq mi to acres
+            double Q = rcoeff * precipint * area; 
 
             return Q;
         }
