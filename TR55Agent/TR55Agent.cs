@@ -80,9 +80,9 @@ namespace TR55Agent
                 double p = hyetograph.ElementAt(i).Value * 0.01;
                 double t;
 
-                t = d * 0.01 * dur * 60;
+                t = d * 60;
+                //t = d * 0.01 * dur * 60;
                 tdiff = t - tempT;
-                //hydrodata.tDiff = tdiff;
                 hydrodata.DRNAREA = area;
                 hydrodata.P = p * precip;
                 hydrodata.dP = (p * precip) - tempP;
