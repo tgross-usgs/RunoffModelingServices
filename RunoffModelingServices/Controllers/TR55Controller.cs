@@ -6,7 +6,7 @@
 //       01234567890123456789012345678901234567890123456789012345678901234567890
 //-------+---------+---------+---------+---------+---------+---------+---------+
 
-// copyright:   2017 WiM - USGS
+// copyright:   2017 WIM - USGS
 
 //    authors:  Jeremy K. Newson USGS Web Informatics and Mapping,
 //              Tara A. Gross USGS Colorado Water Science Center
@@ -28,11 +28,12 @@ using System.Linq;
 using Microsoft.Extensions.Options;
 using RunoffModelingServices.Resources;
 using RunoffModelingServices.ServiceAgents;
-
+using WIM.Services.Attributes;
 
 namespace RunoffModelingServices.Controllers
 {
     [Route("[controller]")]
+    [APIDescription(type = DescriptionType.e_string, Description = "The TR55 resource represents the NRCS TR55 hydrologic model. Resultants return the calculated peak discharge and input parameters or the tabular hydrograph.")]
     public class TR55Controller : ControllerBase
     {
         public ITR55Agent agent { get; set; }
@@ -45,6 +46,7 @@ namespace RunoffModelingServices.Controllers
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet()]
+        [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute.md")]
         public async Task<IActionResult> Get(double? precip, double crvnum, string pdur)
         {
             try
@@ -62,6 +64,7 @@ namespace RunoffModelingServices.Controllers
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
         [HttpGet("GetResult")]
+        [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute_hydrograph.md")]
         public async Task<IActionResult> GetResult(double area, double precip, double crvnum, string pdur)  
         {
             Dictionary<double, double> hyeto = new Dictionary<double, double>();

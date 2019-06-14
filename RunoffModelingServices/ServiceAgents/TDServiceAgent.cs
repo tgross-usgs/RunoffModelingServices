@@ -41,7 +41,7 @@ namespace RunoffModelingServices.ServiceAgents
                 {
                     conn.Host = settings.baseurl;
 
-                    var reply = await conn.DownloadAsync(urlString);
+                    var reply = await conn.DownloadAsync(urlString, default(System.Threading.CancellationToken));
 
                     result = Encoding.UTF8.GetString(reply);
 

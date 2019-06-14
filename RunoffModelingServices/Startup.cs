@@ -9,7 +9,7 @@ using System.Linq;
 using TR55Agent;
 using RationalMethodAgent;
 using RunoffModelingServices.Resources;
-using WiM.Services.Resources;
+using WIM.Services.Resources;
 
 namespace RunoffModelingServices
 {
