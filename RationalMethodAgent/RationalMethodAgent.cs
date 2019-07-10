@@ -6,7 +6,7 @@
 //       01234567890123456789012345678901234567890123456789012345678901234567890
 //-------+---------+---------+---------+---------+---------+---------+---------+
 
-// copyright:   2017 WiM - USGS
+// copyright:   2017 WIM - USGS
 
 //    authors:  Jeremy K. Newson USGS Web Informatics and Mapping,
 //              Tara A. Gross USGS Colorado Water Science Center
@@ -23,7 +23,7 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
-using WiM.Utilities;
+using WIM.Utilities;
 using RationalMethodAgent.Resources;
 
 

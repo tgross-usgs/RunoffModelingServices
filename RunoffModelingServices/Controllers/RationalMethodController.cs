@@ -6,7 +6,7 @@
 //       01234567890123456789012345678901234567890123456789012345678901234567890
 //-------+---------+---------+---------+---------+---------+---------+---------+
 
-// copyright:   2017 WiM - USGS
+// copyright:   2017 WIM - USGS
 
 //    authors:  Jeremy K. Newson USGS Web Informatics and Mapping,
 //              Tara A. Gross USGS Colorado Water Science Center
@@ -29,11 +29,12 @@ using Microsoft.Extensions.Options;
 using RunoffModelingServices.Resources;
 using RunoffModelingServices.ServiceAgents;
 using RationalMethodAgent;
-
+using WIM.Services.Attributes;
 
 namespace RunoffModelingServices.Controllers
 {
     [Route("[controller]")]
+    [APIDescription(type = DescriptionType.e_string, Description = "The Rational Method resource represents the Rational Method hydrologic model. Resultants return the calculated peak discharge and input parameters.")]
     public class RationalMethodController : ControllerBase
     {
         #region PROPERTIES 
@@ -47,7 +48,8 @@ namespace RunoffModelingServices.Controllers
         }
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
-        [HttpGet()]
+        [HttpGet(Name = "Compute")]
+        [APIDescription(type = DescriptionType.e_link, Description = "/Docs/RationalMethod/compute.md")]
         public async Task<IActionResult> Get(double area, double? precipint, double rcoeff, string pdur)
         {
             try
