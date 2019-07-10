@@ -9,7 +9,7 @@ The URL and sample of each resource can be obtained by accessing one of the foll
 
 ## Using the API
 The URL and an example response can be obtained by accessing one of the following resources and uri endpoint located on the sidebar (or selecting the menu button located on the bottom of the screen, if viewing on a mobile device). 
-![Resource Diagram](https://raw.githubusercontent.com/tgross-usgs/RunoffModelingServices/Docs/resource_diagram.png)
+![Resource Diagram](resource_diagram.png)
 
 ### TR55
 The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by the Natural Resources Conservation Service (NRCS), 1986 for small drainage basins that are being urbanized.
