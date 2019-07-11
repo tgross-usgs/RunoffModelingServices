@@ -30,7 +30,7 @@ Common HTTP status codes returned by the services
 Web service request can be performed using most HTTP client libraries. The following illustrated a typical http request/response performed by a client application.
 
 ```
-GET /navigationservices/navigation HTTP/1.1
+GET /runoffmodelingservices/TR55?precip=2&crvnum=80&pdur=I6H100Y HTTP/1.1
 Host: streamstats.usgs.gov
 Accept: application/json
 
@@ -38,60 +38,20 @@ Accept: application/json
 ```
 HTTP/1.1 200 OK
 [
-   {
-      "id":1,
-      "code":"flowpath",
-      "name":"Flow (Raindrop) Path",
-      "description":"Trace flow path of a specified point through the network.",
-      "links":[
-         {
-            "rel":"self by id",
-            "href":"test.streamstats.usgs.gov/navigation//1",
-            "method":"GET"
-         },
-         {
-            "rel":"self by code",
-            "href":"test.streamstats.usgs.gov/navigation//flowpath",
-            "method":"GET"
-         }
-      ]
-   },
-   {
-      "id":2,
-      "code":"networkpath",
-      "name":"Network Path",
-      "description":"Trace relations between 2 specified points through the network.",
-      "links":[
-         {
-            "rel":"self by id",
-            "href":"test.streamstats.usgs.gov/navigation//2",
-            "method":"GET"
-         },
-         {
-            "rel":"self by code",
-            "href":"test.streamstats.usgs.gov/navigation//networkpath",
-            "method":"GET"
-         }
-      ]
-   },
-   {
-      "id":3,
-      "code":"networktrace",
-      "name":"Network Trace",
-      "description":"Upstream or downstream network trace to identify available data selections, such as gages, dams, and/or water quality sites, etc.",
-      "links":[
-         {
-            "rel":"self by id",
-            "href":"test.streamstats.usgs.gov/navigation//3",
-            "method":"GET"
-         },
-         {
-            "rel":"self by code",
-            "href":"test.streamstats.usgs.gov/navigation//networktrace",
-            "method":"GET"
-         }
-      ]
-   }
+    {
+        "drnarea": 0,
+        "p": 2,
+        "rcn": 80,
+        "duration": 6,
+        "ia": 0.5,
+        "s": 2.5,
+        "dP": 0,
+        "pIa": 0,
+        "pl": 0,
+        "pe": 0,
+        "dPe": 0,
+        "q": 0.5625
+    }
 ]
 ```
 
