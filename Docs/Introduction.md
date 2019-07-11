@@ -14,6 +14,19 @@ The sidebar displays the available service resources, accompanying HTTP method a
 
 The description of the resource The Service URL. Any URL Parameters. Parameter Name, Value Type, A description of what the parameter represents, Whether the parameter is required or optional, A REST Query URL test tool is also available that builds an example url, based on the user provided input parameter values and a simple query tool that provides an example of the requested response.
 
+## Common Status Codes
+Common HTTP status codes returned by the services
+| Code  | When |
+| ------------- | ------------- |
+| 200  | Status OK .  |
+| 400  | Status Bad Request . When the request data cannot be read.  |
+| 404  | Status Not Found . When resource is no available.  |
+| 500  | Status Internal Server Error . Please contact the administrator.  |
+
+## Example
+Web service request can be performed using most HTTP client libraries. The following illustrated a typical http request/response performed by a client application.
+
+
 ### TR55
 The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by the Natural Resources Conservation Service (NRCS), 1986 for small drainage basins that are being urbanized.
 
