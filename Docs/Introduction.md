@@ -16,6 +16,7 @@ The description of the resource The Service URL. Any URL Parameters. Parameter N
 
 ## Common Status Codes
 Common HTTP status codes returned by the services
+
 | Code  | When |
 | ------------- | ------------- |
 | 200  | Status OK .  |
