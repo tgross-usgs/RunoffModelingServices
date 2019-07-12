@@ -16,7 +16,8 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 
 > and
 
-> Iₐ = 0.2S<br /><br />
+> Iₐ = 0.2S
+
 > S = (1000/RCN)-10
 
 >> *USDA Natural Resources Conservation Service (NRCS), June 1986, Technical Release 55: Urban Hydrology for Small Watersheds, 164 p. > [Also available at https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.]*
