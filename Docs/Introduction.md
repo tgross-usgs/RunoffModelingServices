@@ -28,7 +28,7 @@ Common HTTP status codes returned by the services
 | `500`  | Status `Internal Server Error`. Please contact the administrator.  |
 
 ## Example
-Web service request can be performed using most HTTP client libraries. The following illustrated a typical http request/response performed by a client application.
+Web service request can be performed using most HTTP client libraries. The following illustrates a typical http request/response performed by a client application.
 
 ```
 GET /runoffmodelingservices/TR55?precip=2&crvnum=80&pdur=I6H100Y HTTP/1.1
