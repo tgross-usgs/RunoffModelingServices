@@ -1,7 +1,7 @@
 ### Rational Method Compute Resource
 Returns a dictionary of model input parameters and the resulting peak discharge for a user-selected location.
 
-The Rational Method is a simple technique for estimating a peak runoff from a small watershed. It was developed by Kuichling, 1889 for small drainage basins in urban areas. Unlike the TR55 method it does not provide any information pertaining to the runoff hydrograph shape. The rational method is expressed by the equation:
+The Rational Method is a simple technique for estimating a peak runoff from a small watershed. It was developed by Kuichling, 1889 for small drainage basins in urban areas. The rational method is expressed by the equation:
 
 > Q = CiA
 
