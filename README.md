@@ -6,8 +6,8 @@
 StreamStats supporting runoff modeling REST web services:
 
 <ul>
-    <li>TR55 - SCS Curve Number Method (NRCS 1986).</li>
-    <li>Rational Method - </li>
+    <li>TR55 - based on the runoff curve number method (Soil Conservation Service, 1986)
+    <li>Rational Method (Kuichling, 1889)</li>
 </ul>
 
 ### Prerequisites
