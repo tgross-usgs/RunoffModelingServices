@@ -63,8 +63,8 @@ To push tags to remote origin: `git push origin --tags`
 
 ## Authors
 
-* **<a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson">Jeremy Newson</a>  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
-* **<a href="https://www.usgs.gov/staff-profiles/tara-a-gross">Tara Gross</a> - *Developer* -  [USGS Colorado Water Science Center](https://co.water.usgs.gov/)
+* **<a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a>  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
+* **<a href="https://www.usgs.gov/staff-profiles/tara-a-gross"><b>Tara Gross</b></a> - *Developer* -  [USGS Colorado Water Science Center](https://co.water.usgs.gov/)
 
 ## License
 
@@ -78,8 +78,7 @@ In the spirit of open source, please cite any re-use of the source code stored i
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration Note 
+* **<a href="https://github.com/GeoJSON-Net/GeoJSON.Net">GeoJson.Net</a>
 
 ## About WIM
 * This project authored by the [USGS WIM team](https://wim.usgs.gov)
