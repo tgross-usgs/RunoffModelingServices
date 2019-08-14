@@ -63,12 +63,12 @@ To push tags to remote origin: `git push origin --tags`
 
 ## Authors
 
-* <a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a>  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
 * <a href="https://www.usgs.gov/staff-profiles/tara-a-gross"><b>Tara Gross</b></a> - *Developer* -  [USGS Colorado Water Science Center](https://co.water.usgs.gov/)
+* <a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a>  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
 
 ## License
 
-This project is licensed under the Creative Commons CC0 1.0 Universal License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Creative Commons CC0 1.0 Universal License - see the [<a href="https://github.com/USGS-WiM/WaterUseServices/blob/staging/LICENSE.md">LICENSE.md</a>] file for details
 
 ## Suggested Citation
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
