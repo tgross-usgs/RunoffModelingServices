@@ -1,4 +1,4 @@
-![WiM](https://github.com/USGS-WiM/StreamStats/raw/staging/wimlogo.png)
+![USGS](https://raw.githubusercontent.com/tgross-usgs/RunoffModelingServices/USGS_ID_black200.png)
 
 
 # Runoff Modeling Services
