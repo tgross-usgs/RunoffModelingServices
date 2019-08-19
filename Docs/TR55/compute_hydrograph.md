@@ -21,7 +21,7 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 >
 >>*Soil Conservation Service, 1986, Urban Hydrology for Small Watersheds, Technical Release 55 (2d ed.): Washington, D.C., United States Department of Agriculture, 210-VI-TR-55, 164 p. -- URL https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.*
 
-#### Precipitation Duration (PDUR) Codes
+##### Precipitation Duration (PDUR) Codes
 The following precipitation duration codes will be accepted by the services
 
 | Code  | Description |
