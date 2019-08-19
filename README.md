@@ -73,7 +73,7 @@ This project is licensed under the Creative Commons CC0 1.0 Universal License - 
 ## Suggested Citation
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
 
-`This project contains code produced by the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://wim.usgs.gov`
+`This project contains code produced by the Colorado Water Science Center and the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://www.usgs.gov/centers/co-water`
 
 
 ## Acknowledgments
