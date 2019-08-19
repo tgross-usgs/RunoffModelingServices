@@ -15,7 +15,7 @@ The Rational Method is a simple technique for estimating a peak runoff from a sm
 >> *Kuichling, E., 1889, The relation between the rainfall and the discharge of sewers in
 populous districts. Transactions, American Society of Civil Engineers 20, 1–56.*
 
-## Precipitation Duration (PDUR) Codes
+#### Precipitation Duration (PDUR) Codes
 The following precipitation duration codes will be accepted by the services
 
 | Code  | Description |
