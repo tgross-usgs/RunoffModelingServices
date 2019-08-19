@@ -1,4 +1,4 @@
-![USGS](https://github.com/tgross-usgs/RunoffModelingServices/tree/staging/USGS_ID_black200.png)
+![USGS](https://github.com/tgross-usgs/RunoffModelingServices/blob/staging/USGS_ID_black200.png)
 
 
 # Runoff Modeling Services
