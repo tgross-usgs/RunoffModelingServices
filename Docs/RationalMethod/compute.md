@@ -20,8 +20,8 @@ The following precipitation duration codes will be accepted by the services
 
 | Code  | Description |
 | ------------- | ------------- |
-| `I6H2Y`  | Maximum 6-hour precipitation that occurs on average once in 2 years  |
-| `I6H100Y`  | Maximum 6-hour precipitation that occurs on average once in 100 years  |
-| `I24H2Y`  | Maximum 24-hour precipitation that occurs on average once in 2 years  |
-| `I24H100Y`  | Maximum 24-hour precipitation that occurs on average once in 100 years  |
+| I6H2Y  | Maximum 6-hour precipitation that occurs on average once in 2 years  |
+| I6H100Y  | Maximum 6-hour precipitation that occurs on average once in 100 years  |
+| I24H2Y  | Maximum 24-hour precipitation that occurs on average once in 2 years  |
+| I24H100Y  | Maximum 24-hour precipitation that occurs on average once in 100 years  |
 
