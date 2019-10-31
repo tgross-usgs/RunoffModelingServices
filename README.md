@@ -64,7 +64,8 @@ To push tags to remote origin: `git push origin --tags`
 ## Authors
 
 * <a href="https://www.usgs.gov/staff-profiles/tara-a-gross"><b>Tara Gross</b></a> - *Lead Developer* -  [USGS Colorado Water Science Center](https://www.usgs.gov/centers/co-water)
-* <a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a>  - *Developer* - [USGS Web Informatics & Mapping](https://www.usgs.gov/water-resources/wim/)
+* <a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a> - *Developer* - [USGS Web Informatics & Mapping](https://www.usgs.gov/water-resources/wim/)
+* <a href="https://www.usgs.gov/staff-profiles/michael-s-kohn"><b>Michael Kohn</b></a> - *Civil Engineer* - [USGS Colorado Water Science Center](https://www.usgs.gov/centers/co-water)
 
 ## License
 
