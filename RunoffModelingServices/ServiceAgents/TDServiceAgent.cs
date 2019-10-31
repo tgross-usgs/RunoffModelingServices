@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using FluentFTP;
+using System.Net.Http;
 using RunoffModelingServices.Resources;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -36,14 +36,16 @@ namespace RunoffModelingServices.ServiceAgents
                 //pub/hdsc/data/sa/sa_general_6h_temporal.csv
                 string urlString = String.Format(getURI(assignSType(dur)));
 
-                FtpClient client = new FtpClient(settings.baseurl);
-                using (FtpClient conn = new FtpClient())
+                HttpClient client = new HttpClient();
+                using (HttpClient conn = new HttpClient())
                 {
-                    conn.Host = settings.baseurl;
+                    conn.BaseAddress = new Uri(settings.baseurl);
 
-                    var reply = await conn.DownloadAsync(urlString, default(System.Threading.CancellationToken));
-
-                    result = Encoding.UTF8.GetString(reply);
+                    var reply = await conn.GetAsync(urlString, default(System.Threading.CancellationToken));
+                    string message = await reply.Content.ReadAsStringAsync();
+                    string parsedString = Regex.Unescape(message);
+                    byte[] isoBites = Encoding.GetEncoding("ISO-8859-1").GetBytes(parsedString);
+                    result = Encoding.UTF8.GetString(isoBites, 0, isoBites.Length);
 
                     CollectData(result);
                 }
