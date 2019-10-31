@@ -50,11 +50,11 @@ namespace RunoffModelingServices.Controllers
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet(Name = "Compute")]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/RationalMethod/compute.md")]
-        public async Task<IActionResult> Get(double area, double? precipint, double rcoeff, string pdur)
+        public async Task<IActionResult> Get(double area, double precipint, double rcoeff, string pdur)
         {
             try
             {
-                if (!precipint.HasValue || precipint < 0 || precipint > 100)
+                if (precipint < 0 || precipint > 100)
                     return new BadRequestObjectResult("One or more of the parameters are invalid.");
             }
             catch (Exception ex)
@@ -65,7 +65,7 @@ namespace RunoffModelingServices.Controllers
             int Hlocation = pdur.IndexOf("H") - 1;
             int dur = Convert.ToInt32(pdur.Substring(1, Hlocation));
 
-            return Ok(agent.Execute(area, precipint.Value, rcoeff, dur));
+            return Ok(agent.Execute(area, precipint, rcoeff, dur));
         }
         #endregion
     }

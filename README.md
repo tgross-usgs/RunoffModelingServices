@@ -1,4 +1,4 @@
-![WiM](https://github.com/USGS-WiM/StreamStats/raw/staging/wimlogo.png)
+![USGS](https://github.com/tgross-usgs/RunoffModelingServices/blob/staging/USGS_ID_black200.png)
 
 
 # Runoff Modeling Services
@@ -6,8 +6,8 @@
 StreamStats supporting runoff modeling REST web services:
 
 <ul>
-    <li>TR55 - SCS Curve Number Method (NRCS 1986).</li>
-    <li>Rational Method - </li>
+    <li>TR55 - based on the runoff curve number method (Soil Conservation Service, 1986)
+    <li>Rational Method (Kuichling, 1889)</li>
 </ul>
 
 ### Prerequisites
@@ -63,8 +63,9 @@ To push tags to remote origin: `git push origin --tags`
 
 ## Authors
 
-* **<a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson">Jeremy Newson</a>  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
-* **<a href="https://www.usgs.gov/staff-profiles/tara-a-gross">Tara Gross</a> - *Developer* -  [USGS Colorado Water Science Center](https://co.water.usgs.gov/)
+* <a href="https://www.usgs.gov/staff-profiles/tara-a-gross"><b>Tara Gross</b></a> - *Lead Developer* -  [USGS Colorado Water Science Center](https://www.usgs.gov/centers/co-water)
+* <a href="https://www.usgs.gov/staff-profiles/jeremy-k-newson"><b>Jeremy Newson</b></a> - *Developer* - [USGS Web Informatics & Mapping](https://www.usgs.gov/water-resources/wim/)
+* <a href="https://www.usgs.gov/staff-profiles/michael-s-kohn"><b>Michael Kohn</b></a> - *Civil Engineer* - [USGS Colorado Water Science Center](https://www.usgs.gov/centers/co-water)
 
 ## License
 
@@ -73,15 +74,9 @@ This project is licensed under the Creative Commons CC0 1.0 Universal License - 
 ## Suggested Citation
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
 
-`This project contains code produced by the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://wim.usgs.gov`
+`This project contains code produced by the Colorado Water Science Center and the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://www.usgs.gov/centers/co-water`
 
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration Note 
-
-## About WIM
-* This project authored by the [USGS WIM team](https://wim.usgs.gov)
-* WIM is a team of developers and technologists who build and manage tools, software, web services, and databases to support USGS science and other federal government cooperators.
-* WIM is a part of the [Upper Midwest Water Science Center](https://www.usgs.gov/centers/wisconsin-water-science-center).
+* [USGS WIM team](https://wim.usgs.gov)

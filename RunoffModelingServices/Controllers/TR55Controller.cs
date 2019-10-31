@@ -47,11 +47,11 @@ namespace RunoffModelingServices.Controllers
         //collects data from client, checks for valid precip, calls method to calculate Q
         [HttpGet()]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute.md")]
-        public async Task<IActionResult> Get(double? precip, double crvnum, string pdur)
+        public async Task<IActionResult> Get(double precip, double crvnum, string pdur)
         {
             try
             {
-                if (!precip.HasValue || precip < 0 || precip > 100)
+                if (precip < 0 || precip > 100)
                     return new BadRequestObjectResult("One or more of the parameters are invalid.");
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace RunoffModelingServices.Controllers
             }
             int Hlocation = pdur.IndexOf("H") - 1;
             int dur = Convert.ToInt32(pdur.Substring(1, Hlocation));
-            return Ok(agent.Execute(precip.Value, crvnum, dur));
+            return Ok(agent.Execute(precip, crvnum, dur));
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
         [HttpGet("GetResult")]
