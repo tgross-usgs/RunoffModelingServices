@@ -34,7 +34,7 @@ using WIM.Services.Attributes;
 namespace RunoffModelingServices.Controllers
 {
     [Route("[controller]")]
-    [APIDescription(type = DescriptionType.e_string, Description = "The Rational Method resource represents the Rational Method hydrologic model. Resultants return the calculated peak discharge and input parameters.")]
+    [APIDescription(type = DescriptionType.e_string, Description = "The Rational Method resource represents the Rational Method hydrologic model. Resultants return the calculated peak runoff and input parameters.")]
     public class RationalMethodController : ControllerBase
     {
         #region PROPERTIES 
