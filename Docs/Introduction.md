@@ -56,3 +56,18 @@ HTTP/1.1 200 OK
 ```
 
 The Runoff Services API performs multiple procedures in order to compile a list of hydrologic variables that can be consumed by custom client applications. As documented by this page, which can also serve as a simple URL builder, the Runoff Services API is built following RESTful principles to ensure scalability and predictable URLs. JSON is returned by all API responses, including errors and example results and summaries for each resource. This API is intended to provide some guidance in working with the services.
+
+| Variable | Description |
+| ------------- | ------------- |
+| drnarea |Area that drains to a point on a stream in square miles |
+| p | Cumulative precipitation in inches |
+| rcn | Runoff-curve number as defined by NRCS |
+| duration | Storm duration in hours |
+| ia | Initial abstraction in inches | 
+| s | Total maximum retention in inches |
+| dP | Incremental precipitation in inches |
+| pIa | Cumulative precipitation minus the inital abstraction (P-Ia) |
+| pl | Precipitation loss in inches |
+| pe | Cumulative precipitation excess in inches |
+| dPe | Incremental precipitation excess in inches |
+| q | Total runoff in cubic feet per second | 
