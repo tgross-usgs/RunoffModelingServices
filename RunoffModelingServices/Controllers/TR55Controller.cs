@@ -33,7 +33,7 @@ using WIM.Services.Attributes;
 namespace RunoffModelingServices.Controllers
 {
     [Route("[controller]")]
-    [APIDescription(type = DescriptionType.e_string, Description = "The TR55 resource represents the NRCS TR55 hydrologic model. Resultants return the calculated peak runoff and input parameters.")]
+    [APIDescription(type = DescriptionType.e_string, Description = "The TR55 resource represents the NRCS TR55 hydrologic model. Resultants return the calculated peak runoff and input parameters. Tabular hydrograph variables are also returned from the Compute Hydrograph resource.")]
     public class TR55Controller : ControllerBase
     {
         public ITR55Agent agent { get; set; }
@@ -45,7 +45,7 @@ namespace RunoffModelingServices.Controllers
         }
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
-        [HttpGet()]
+        [HttpGet(Name = "Compute")]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute.md")]
         public async Task<IActionResult> Get(double precip, double crvnum, string pdur)
         {
@@ -63,8 +63,8 @@ namespace RunoffModelingServices.Controllers
             return Ok(agent.Execute(precip, crvnum, dur));
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
-        [HttpGet("GetResult")]
-        [APIDescription(type = DescriptionType.e_string, Description = "The TR55 resource represents the NRCS TR55 hydrologic model. Resultants return the calculated peak runoff, input parameters, and the tabular hydrograph.")]
+        [HttpGet(Name = "Compute Hydrograph")]
+        [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute_hydrograph.md")]
         public async Task<IActionResult> GetResult(double area, double precip, double crvnum, string pdur)  
         {
             Dictionary<double, double> hyeto = new Dictionary<double, double>();
