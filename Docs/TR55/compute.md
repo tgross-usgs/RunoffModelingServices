@@ -1,5 +1,5 @@
 ### TR55 Compute Resource
-Returns an object of model input parameters and the resulting peak discharge for a user-selected location.
+Returns an object of model input parameters and the resulting peak runoff for a user-selected location.
 
 The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by the Natural Resources Conservation Service (NRCS), 1986 for small drainage basins that are being urbanized.
 
