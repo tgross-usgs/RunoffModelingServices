@@ -45,7 +45,7 @@ namespace RunoffModelingServices.Controllers
         }
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
-        [HttpGet(Name = "Compute TR55")]
+        [HttpGet(Name = "Compute ")]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute.md")]
         public async Task<IActionResult> Get(double precip, double crvnum, string pdur)
         {
@@ -63,7 +63,7 @@ namespace RunoffModelingServices.Controllers
             return Ok(agent.Execute(precip, crvnum, dur));
         }
         //collects data from client, calls method to gather appropriate NOAA temporal precip distribution data for hyetograph, passes all data off to compute hydrograph values
-        [HttpGet(Name = "Compute Hydrograph")]
+        [HttpGet("GetResult", Name = "Compute Hydrograph")]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute_hydrograph.md")]
         public async Task<IActionResult> GetResult(double area, double precip, double crvnum, string pdur)  
         {
