@@ -45,7 +45,7 @@ namespace RunoffModelingServices.Controllers
         }
         #region METHODS
         //collects data from client, checks for valid precip, calls method to calculate Q
-        [HttpGet(Name = "Compute")]
+        [HttpGet(Name = "Compute TR55")]
         [APIDescription(type = DescriptionType.e_link, Description = "/Docs/TR55/compute.md")]
         public async Task<IActionResult> Get(double precip, double crvnum, string pdur)
         {
