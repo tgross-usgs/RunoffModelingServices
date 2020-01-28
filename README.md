@@ -6,8 +6,8 @@
 StreamStats supporting runoff modeling REST web services:
 
 <ul>
-    <li>TR55 - based on the runoff curve number method (Soil Conservation Service, 1986)
     <li>Rational Method (Kuichling, 1889)</li>
+    <li>TR55 - based on the NRCS runoff curve number method (Natural Resource Conservation Service, 1986)</li>
 </ul>
 
 ### Prerequisites
@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 https://help.github.com/articles/cloning-a-repository/
 
-Open the solution file (.sln) using perfered IDE.
+Open the solution file (.sln) using preferred IDE.
 
 ## Building and testing
 
@@ -74,7 +74,7 @@ This project is licensed under the Creative Commons CC0 1.0 Universal License - 
 ## Suggested Citation
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
 
-`This project contains code produced by the Colorado Water Science Center and the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://www.usgs.gov/centers/co-water`
+`Gross, T.A., Newson, J.K., and Kohn, M.S. 2019, Runoff Modeling Services: U.S.Geological Survey software release, https://doi.org/10.5066/P910XSVJ`
 
 
 ## Acknowledgments
