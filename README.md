@@ -74,7 +74,7 @@ This project is licensed under the Creative Commons CC0 1.0 Universal License - 
 ## Suggested Citation
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
 
-`Gross, T.A., Newson, J.K., and Kohn, M.S. 2019, Runoff Modeling Services: U.S.Geological Survey software release, https://doi.org/10.5066/P910XSVJ`
+`Gross, T.A., Newson, J.K., and Kohn, M.S. 2020, Runoff Modeling Services: U.S.Geological Survey software release, https://doi.org/10.5066/P910XSVJ`
 
 
 ## Acknowledgments
