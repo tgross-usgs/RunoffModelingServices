@@ -1,5 +1,5 @@
 ### TR55 Compute Hydrograph Resource
-Returns a response object of input parameters and time-series of the resulting tabular hydrograph variables, based on a user-selected location. Descriptions of variables can be found on the Home page in the Hydrologic Response Variable table.
+Returns a response object of model input parameters and time-series of the resulting tabular hydrograph variables, based on a user-selected location. Descriptions of variables can be found on the Home page in the Hydrologic Response Variable table.
 
 The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by the Natural Resources Conservation Service (NRCS)(1986) for small drainage basins that are being urbanized.
 
