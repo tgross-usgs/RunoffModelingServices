@@ -1,7 +1,7 @@
 ### TR55 Compute Resource
-Returns an object of model input parameters and the resulting peak runoff for a user-selected location.
+Returns a response object of model input parameters and the resulting peak runoff for a user-selected location.
 
-The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by the Natural Resources Conservation Service (NRCS), 1986 for small drainage basins that are being urbanized.
+The TR55 method is a simple technique for estimating peak runoff from a small watershed. It was developed by Natural Resources Conservation Service (NRCS)(1986) for small drainage basins that are being urbanized.
 
 The method begins with a rainfall amount uniformly imposed on the watershed over a specified time distribution. Mass rainfall is converted to mass runoff by using a runoff curve number (RCN). RCN is based on soils, plant cover, amount of impervious areas, interception, and surface storage. TR55 is expressed by the equation:
 
@@ -20,7 +20,7 @@ The method begins with a rainfall amount uniformly imposed on the watershed over
 >Iₐ = 0.2S<br />
 >S = (1000/RCN)-10
 >
->>*Soil Conservation Service, 1986, Urban Hydrology for Small Watersheds, Technical Release 55 (2d ed.): Washington, D.C., United States Department of Agriculture, 210-VI-TR-55, 164 p. -- URL https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.*
+>>*Natural Resources Conservation Service, 1986, Urban Hydrology for Small Watersheds, Technical Release 55 (2d ed.): Washington, D.C., United States Department of Agriculture, 210-VI-TR-55, 164 p. Available at --https://www.nrcs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb1044171.pdf.*
 
 ##### Precipitation Duration (PDUR) Codes
 The following precipitation duration codes will be accepted by the services
