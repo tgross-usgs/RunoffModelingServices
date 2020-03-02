@@ -38,6 +38,7 @@ namespace RunoffModelingServices.ServiceAgents
 
                 var handler = new HttpClientHandler();                              //discontinue use when NOAA renews their certificate
                 handler.ClientCertificateOptions = ClientCertificateOption.Manual;  //
+
                 handler.ServerCertificateCustomValidationCallback =                 //
                     (httpRequestMessage, cert, cetChain, policyErrors) =>           //
                     {                                                               //
