@@ -36,8 +36,15 @@ namespace RunoffModelingServices.ServiceAgents
                 //pub/hdsc/data/sa/sa_general_6h_temporal.csv
                 string urlString = String.Format(getURI(assignSType(dur)));
 
-                HttpClient client = new HttpClient();
-                using (HttpClient conn = new HttpClient())
+                var handler = new HttpClientHandler();                              //discontinue use when NOAA renews their certificate
+                handler.ClientCertificateOptions = ClientCertificateOption.Manual;  //
+                handler.ServerCertificateCustomValidationCallback =                 //
+                    (httpRequestMessage, cert, cetChain, policyErrors) =>           //
+                    {                                                               //
+                        return true;                                                //
+                    };                                                              //
+
+                using (HttpClient conn = new HttpClient(handler))                   //remove handler argument
                 {
                     conn.BaseAddress = new Uri(settings.baseurl);
 
