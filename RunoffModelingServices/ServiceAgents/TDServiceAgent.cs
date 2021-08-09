@@ -66,7 +66,7 @@ namespace RunoffModelingServices.ServiceAgents
             }
             catch (Exception ex)
             {
-                return false;
+                throw;
             }
         }//end PostFeatures
 
